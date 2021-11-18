@@ -1,0 +1,20 @@
+@mixin card-img($posx:center,$posy:center){
+    background-color:rgb(250,250,250);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:$posx $posy;
+}
+
+@mixin minWidthMediaQuery($width) {
+    @media only screen and  (min-width: $width) {
+        @content;
+    }
+
+}
+
+@mixin maxWidthMediaQuery($width) {
+    @media only screen and  (max-width: $width) {
+        @content;
+    }
+
+}
